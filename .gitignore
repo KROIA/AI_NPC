@@ -8,3 +8,5 @@ out
 training/runs
 __pycache__
 *.pyc
+.claude/ProjectManager/.last_version
+.claude/settings.local.json

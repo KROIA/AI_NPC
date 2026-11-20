@@ -1,6 +1,6 @@
 # Pending tasks (state of 2026-11-18)
 
-The project is not under git. Everything below is in the working tree and not yet confirmed in game.
+Everything below is committed (initial commit, 2026-11-20) but not yet confirmed in game.
 
 ## Done, not yet tested in game
 - **Arch 6 (training/train.py, data.py, serve.py; now the default):** the aim picks one of the rays or a detected

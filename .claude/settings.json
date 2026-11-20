@@ -1,0 +1,49 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python E:/Dokumente/Minecraft/mods/AI_NPC/mc_1.21.1_AI_NPC/.claude/hooks/pm_guard.py session"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python E:/Dokumente/Minecraft/mods/Tools/hooks/guard_shared_processes.py"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash|PowerShell|Write|Edit|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python E:/Dokumente/Minecraft/mods/AI_NPC/mc_1.21.1_AI_NPC/.claude/hooks/pm_guard.py pretool"
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(git status:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(git show:*)",
+      "Bash(git branch:*)"
+    ],
+    "ask": [
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "PowerShell(git commit:*)",
+      "PowerShell(git push:*)"
+    ]
+  }
+}
