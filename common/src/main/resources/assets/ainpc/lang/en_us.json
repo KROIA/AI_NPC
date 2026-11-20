@@ -1,0 +1,6 @@
+{
+  "key.categories.ainpc": "AI NPC",
+  "key.ainpc.toggle_sensor_debug": "Toggle sensor debug overlay",
+  "key.ainpc.toggle_recording": "Start/stop recording",
+  "key.ainpc.next_label": "Next recording label"
+}

@@ -1,0 +1,10 @@
+build
+.gradle
+.architectury-transformer
+run
+out
+.idea
+*.iml
+training/runs
+__pycache__
+*.pyc

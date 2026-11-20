@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "ainpc",
+  "version": "${version}",
+  "name": "AI NPC",
+  "description": "NPC players driven by trained neural networks.",
+  "authors": [
+    "Alex Krieg"
+  ],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.kroia.ainpc.fabric.AiNpcFabric"
+    ],
+    "client": [
+      "net.kroia.ainpc.fabric.AiNpcFabricClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "${minecraft_version}",
+    "java": ">=21",
+    "architectury": ">=13.0.8",
+    "fabric-api": "*"
+  },
+  "mixins": [
+    "ainpc.mixins.json"
+  ]
+}
